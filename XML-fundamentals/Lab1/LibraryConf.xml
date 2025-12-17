@@ -1,0 +1,64 @@
+<library>
+    <description>This is the library of ITI</description>
+    <librarian>adham</librarian>
+    <location city="cairo" country='Egypt'/>
+    <book>
+        <title>book1</title>
+        <author>author1</author>
+        <isbn>123456</isbn>
+        <preface>This is the first book in our file</preface>
+        <parts>
+            <part>
+                <title>Part 1</title>
+                <chapters>
+                    <chapter>
+                        <title>Chapter 1</title>
+                        <summary>
+                            Introduction
+                        </summary>
+                        <sections>
+                            <section>
+                                <paragraph>
+                                    This is paragraph one.
+                                </paragraph>
+                                <paragraph>
+                                    this is paragraph two.
+                                </paragraph>
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+        </parts>
+    </book>
+    <book>
+        <title>book1</title>
+        <author>author1</author>
+        <isbn>123456</isbn>
+        <preface><![CDATA[ 
+            This part to test CDATA sction it can contain < , > , & 
+            with no problems.
+            ]]></preface>
+        <parts>
+            <part>
+                <title>Part 1</title>
+                <chapters>
+                    <chapter>
+                        <title>Chapter 1</title>
+                        <summary></summary>
+                        <sections>
+                            <section>
+                                <paragraph>
+                                    This is paragraph one.
+                                </paragraph>
+                                <paragraph>
+                                    this is paragraph two.
+                                </paragraph>
+                            </section>
+                        </sections>
+                    </chapter>
+                </chapters>
+            </part>
+        </parts>
+    </book>
+</library>

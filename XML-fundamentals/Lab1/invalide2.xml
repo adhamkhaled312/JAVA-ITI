@@ -1,0 +1,12 @@
+<!DOCTYPE NEWSPAPER SYSTEM "newspaper.dtd">
+<NEWSPAPER>
+    <ARTICLE EDITOR="Ahmed" DATE="2025-12-17" EDITION="Morning">
+        <HEADLINE>Breaking News</HEADLINE>
+        <BYLINE>&NEWSPAPER; Reporter Adham</BYLINE>
+        <LEAD>Artificial intelligence is changing the way we develop software</LEAD>
+        <BODY>
+            Companies are investing heavily in AI research and deployment.
+        </BODY>
+        <NOTES>&COPYRIGHT; Published by &PUBLISHER;</NOTES>
+    </ARTICLE>
+</NEWSPAPER>
