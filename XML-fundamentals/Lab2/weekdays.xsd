@@ -1,0 +1,32 @@
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://secondlab.com/weekday"
+    xmlns="http://secondlab.com/weekday"
+    elementFormDefault="qualified">
+
+    <xs:simpleType name="integervalues">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="7"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="stringvalues">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/>
+            <xs:enumeration value="Saturday"/>
+            <xs:enumeration value="Sunday"/>
+            <xs:enumeration value="Monday"/>
+            <xs:enumeration value="Tuesday"/>
+            <xs:enumeration value="Wednesday"/>
+            <xs:enumeration value="Thursday"/>
+            <xs:enumeration value="Friday"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="WeekDay">
+        <xs:simpleType>
+            <xs:union memberTypes="stringvalues integervalues"/>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

@@ -1,0 +1,12 @@
+<BookStore
+    xmlns="http://secondlab.com/firstbookstore"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://secondlab.com/firstbookstore firstbookstore.xsd"> 
+    <Book>
+        <Title>Clean Code</Title>
+        <Author>Robert C. Martin</Author>
+        <Date>2008</Date>
+        <ISBN>9780132350884</ISBN>
+        <Publisher>Prentice Hall</Publisher>
+    </Book>
+</BookStore>

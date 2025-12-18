@@ -1,0 +1,14 @@
+<BookStore 
+    xmlns="http://secondlab.com/secondbookstore"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://secondlab.com/secondbookstore secondbookstore.xsd"
+    >
+    <Book Category="science">
+        <Title>A Brief History of Time</Title>
+        <Author>Stephen Hawking</Author>
+    </Book>
+    <Book>
+        <Title>1984</Title>
+        <Author>George Orwell</Author>
+    </Book>
+</BookStore>

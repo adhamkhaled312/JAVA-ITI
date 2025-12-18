@@ -1,0 +1,6 @@
+<WeekDay
+    xmlns="http://secondlab.com/weekday"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://secondlab.com/weekday weekdays.xsd"> 
+    Friday
+</WeekDay>
