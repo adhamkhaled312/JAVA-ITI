@@ -1,0 +1,6 @@
+ways to create thread
+thread lifecycle
+wait 
+notify, notifyAll
+
+english text
