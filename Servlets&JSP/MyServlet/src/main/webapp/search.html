@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Form</title>
+    <style>
+        body { text-align: center; font-family: Arial; }
+        table { border:1px solid black; margin: auto; border-collapse: collapse; }
+        th, td { padding: 5px 10px; border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <div id="welcome"></div>
+
+    <h1>Search Form</h1>
+    <p>Please enter the first name, last name, or part of any.</p>
+
+    <form action="SearchServlet" method="GET">
+        <label><b>Name:</b></label>
+        <input type="text" name="keyword">
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+    <div id="results"></div>
+</body>
+</html>

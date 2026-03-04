@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LogIn</title>
+</head>
+<body>
+    <p id="error" style="color:red; font-weight:bold; display:none;">
+        Invalid name or email!
+    </p>
+    <div>
+        <h2>Login</h2>
+        <form action="LoginServlet" method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="Enter your name" required><br><br>
+
+            <label>Password:</label>
+            <input type="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        if (new URLSearchParams(location.search).has("error"))
+            document.getElementById("error").style.display = "block";
+    </script>
+</body>
+</html>
