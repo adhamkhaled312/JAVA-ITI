@@ -1,0 +1,32 @@
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://jets.iti.gov/schemas/person"
+    xmlns="http://jets.iti.gov/schemas/person"
+    elementFormDefault="qualified"
+    >
+
+    <xs:element name="hamada" type="hamadaType" />
+    <xs:element name="person" type="personType" />
+
+    <xs:complexType name="hamadaType">
+        <xs:sequence>
+            <xs:element name="one" type="xs:string" minOccurs="0" />
+            <xs:element name="two" type="xs:int" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="personType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="address" type="addressType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addressType">
+        <xs:sequence>
+            <xs:element name="number" type="xs:unsignedInt" />
+            <xs:element name="street" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

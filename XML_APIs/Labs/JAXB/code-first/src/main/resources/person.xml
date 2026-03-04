@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>Adham Khaled</name>
+    <email>adham@gmail.com</email>
+    <address>
+        <country>Egypt</country>
+        <city>Cairo</city>
+        <street>Mecca</street>
+    </address>
+    <hobbies>
+        <hobby>Reading</hobby>
+        <hobby>Gaming</hobby>
+        <hobby>Padel</hobby>
+    </hobbies>
+</person>

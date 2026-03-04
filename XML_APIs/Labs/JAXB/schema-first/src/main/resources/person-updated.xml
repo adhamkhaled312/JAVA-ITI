@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<person xmlns="http://jets.iti.gov/schemas/person">
+    <name>Khaled Ali</name>
+    <address>
+        <number>90</number>
+        <street>Abbas Akkad</street>
+    </address>
+</person>

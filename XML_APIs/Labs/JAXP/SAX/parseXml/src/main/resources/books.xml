@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Books>
+    <Book>
+        <Title>Hello, Java</Title>
+        <Author>Ahmed Aboulroos</Author>
+        <Chapters>
+            <Chapter>
+                <Title>Introduction</Title>
+            </Chapter>
+        </Chapters>
+    </Book>
+
+    <Book>
+        <Title>Hello, C++</Title>
+        <Author>Ahmed Amin</Author>
+        <Chapters>
+            <Chapter>
+                <Title>Introduction</Title>
+            </Chapter>
+        </Chapters>
+    </Book>
+
+</Books>

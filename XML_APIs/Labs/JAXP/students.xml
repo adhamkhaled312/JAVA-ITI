@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<students>
+    <student>
+        <name>ahmed amin</name>
+        <age>30</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>java</track>
+        <about>some random student</about>
+    </student>
+
+    <student>
+        <name>mohamed aboulroos</name>
+        <age>99</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>erp</track>
+        <about>some random student</about>
+    </student>
+
+    <student>
+        <name>mostafa aboulroos</name>
+        <age>87</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>data science</track>
+        <about>some random student</about>
+    </student>
+
+    <student>
+        <name>ahmed aboulroos</name>
+        <age>55</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>c#</track>
+        <about>some random student</about>
+    </student>
+
+    <student>
+        <name>ahmed aboulroos</name>
+        <age>23</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>c++</track>
+        <about>some random student</about>
+    </student>
+
+    <student>
+        <name>ahmed aboulroos</name>
+        <age>93</age>
+        <email>student@iti.gov.eg</email>
+        <phone>01099554422</phone>
+        <track>sap</track>
+        <about>some random student</about>
+    </student>
+</students>

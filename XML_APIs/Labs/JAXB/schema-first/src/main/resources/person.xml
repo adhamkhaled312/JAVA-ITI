@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<person xmlns="http://jets.iti.gov/schemas/person">
+    <name>Adham Khaled</name>
+    <address>
+        <number>12</number>
+        <street>Mecca</street>
+    </address>
+</person>
