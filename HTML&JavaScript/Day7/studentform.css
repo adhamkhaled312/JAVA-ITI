@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 4px 0 4px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+.edit-btn {
+    background: orange;
+}
+
+.delete-btn {
+    background: red;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 5px;
+    cursor: pointer;
+}

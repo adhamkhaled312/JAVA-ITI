@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="studentform.css">
+</head>
+<body>
+<div class="container">
+
+    <h2>Student Management System</h2>
+
+    <label>First Name</label>
+    <input type="text" id="fname">
+
+    <label>Last Name</label>
+    <input type="text" id="lname">
+
+    <label>Birth Date</label>
+    <input type="date" id="birth">
+
+    <label>Department</label>
+    <input type="text" id="dept">
+
+    <button onclick="addStudent()">Add / Update</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Department</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+</div>
+
+<script src="studentform.js"></script>
+
+</body>
+</html>

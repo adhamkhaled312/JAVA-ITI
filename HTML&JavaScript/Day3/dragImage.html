@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <image src="photo.jpeg" id="image" draggable="false" 
+     style="position: absolute;width: 150px;">
+
+     <script>
+        image = document.getElementById("image");
+
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        function mouseDown(e) {
+            isDragging = true;
+            offsetX = e.clientX - image.offsetLeft;
+            offsetY = e.clientY - image.offsetTop;
+        }
+        function mouseMove(e) {
+            if (!isDragging) return; 
+            let x = e.clientX - offsetX;
+            let y = e.clientY - offsetY;
+            image.style.left = x + "px";
+            image.style.top = y + "px";
+        }
+        function mouseUp() {
+            isDragging = false;
+        }
+
+        image.addEventListener("mousedown", mouseDown);
+        document.addEventListener("mousemove", mouseMove);
+        document.addEventListener("mouseup",mouseUp);
+     </script>
+</body>
+</html>

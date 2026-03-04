@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p>Enter a sentence to split into words</p>
+
+<input type="text" id="sentence" size="40"
+       value="Hello,welcome,good bye">
+
+Split by:
+<input type="text" id="delimiter" size="2" value=",">
+
+<button id="button">Split</button>
+
+<p>The sentence split into words is:</p>
+
+<textarea id="result" rows="6" cols="30"></textarea>
+
+<p>
+The first 10 characters of the input string are:
+<input type="text" id="first10" readonly>
+</p>
+
+<script>
+function splitText() {
+
+    let text = document.getElementById("sentence").value;
+    let delimiter = document.getElementById("delimiter").value;
+
+    let parts = text.split(delimiter);
+
+    let output = "";
+
+    for (let i = 0; i < parts.length; i++) {
+        output += parts[i] + "\n";
+    }
+
+    document.getElementById("result").value = output;
+
+    let firstTen = text.substring(0, 10);
+    document.getElementById("first10").value = firstTen;
+
+}
+    document.getElementById("button").onclick=splitText;
+    
+</script>
+
+</body>
+</html>

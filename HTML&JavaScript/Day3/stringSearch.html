@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>The string to search is</h2>
+    <textarea rows="3" cols="30" id="mainString">Hi all this is the second day in javascript</textarea>
+    <br><br>
+    Enter substring: <input type="text" id="searchString">
+    <button onclick="search()">Search</button>
+    At index <input type="number" id="startIndex">  
+    <p>First occurrence at index: <span id="first"></span></p>
+    <p>Last occurrence at index: <span id="last"></span></p>
+    <p>First from your index at: <span id="firstFrom"></span></p>
+    <p>Last before your index at: <span id="lastBefore"></span></p>
+
+    <script>
+        function search(){
+            let mainString = document.getElementById("mainString").value;
+            let subString = document.getElementById("searchString").value;
+            let index = document.getElementById("startIndex").value;
+
+            let first = mainString.indexOf(subString);
+
+            let last = mainString.lastIndexOf(subString);
+
+            let firstFrom = mainString.indexOf(subString, index);
+
+            let lastBefore = mainString.lastIndexOf(subString, index);
+
+            document.getElementById("first").innerText = first;
+            document.getElementById("last").innerText = last;
+            document.getElementById("firstFrom").innerText = firstFrom;
+            document.getElementById("lastBefore").innerText = lastBefore;
+            
+        }
+    </script>
+</body>
+</html>

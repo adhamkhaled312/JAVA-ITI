@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser List</title>
+</head>
+<body>
+    Your favorite browser: <input type="text" id="browserInput" placeholder="Enter browser name">
+    <br><br>
+    Select your favorite browser:
+    <select id="browserList" onchange="updateInput()">
+        <option>Choose One</option>
+        <option>Internet Explorer</option>
+        <option>Netscape Navigator</option>
+        <option>JavaHotBrowser</option>
+    </select>
+
+    <br><br>
+    <button onclick="addBrowser()">Add</button>
+    <button onclick="deleteBrowser()">Delete</button>
+
+    <script src="browsers.js"></script>
+</body>
+</html>

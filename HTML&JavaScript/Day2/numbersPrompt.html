@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var first, second, third, min, max;
+
+        function getNumber(message) {
+            let value;
+            do {
+                value = Number(prompt(message));
+
+                if (isNaN(value)) {
+                    alert("Please enter a valid number!");
+                }
+
+            } while (isNaN(value));
+
+            return value;
+        }
+
+        first = getNumber("Enter first number");
+        second = getNumber("Enter second number");
+        third = getNumber("Enter third number");
+
+        min = Math.min(first, second, third);
+        max = Math.max(first, second, third);
+
+        document.write("First number: " + first + "<br>");
+        document.write("Second number: " + second + "<br>");
+        document.write("Third number: " + third + "<br>");
+        document.write("Max number: " + max + "<br>");
+        document.write("Min number: " + min + "<br>");
+    </script>
+</head>
+
+<body>
+    <p>Click refresh to run the script again</p>
+</body>
+</html>

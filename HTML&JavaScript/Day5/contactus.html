@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<style>
+    body {
+        font-family: Arial;
+        background: #222;
+    }
+
+    .container {
+        width: 500px;
+        margin: 30px auto;
+        background: #f5f5f5;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    h1 {
+        background: #38c9a3;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 5px;
+        background: white;
+    }
+
+    legend {
+        color: #38c9a3;
+        font-weight: bold;
+    }
+
+    label {
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 8px;
+    }
+
+    input, select {
+        padding: 5px;
+        width: 250px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    button {
+        background: #38c9a3;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    button:hover {
+        background: #2fa589;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form id="contactForm">
+
+            <fieldset>
+                <legend>1 Account Information</legend>
+
+                <label>Username*</label>
+                <input type="text" id="username" required><br>
+
+                <label>Password*</label>
+                <input type="password" id="password" required><br>
+
+                <label>Confirm Password*</label>
+                <input type="password" id="confirmPassword" required><br>
+
+                <label>Credit Card No*</label>
+                <input type="text" id="card" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>2 Personal Information</legend>
+
+                <label>Name*</label>
+                <input type="text" id="name" required><br>
+
+                <label>Date of Birth</label>
+                <input type="date"><br>
+
+                <label>Favorite Color</label>
+                <input type="color"><br>
+
+                <label>Profile Photo</label>
+                <input type="file"><br>
+
+                <label>Favorite Browser*</label>
+                <input type="text" id="browser" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>3 Company Information</legend>
+
+                <label>No. of Employees</label>
+                <input type="number"><br>
+
+                <label>Estimated Revenue</label>
+                <input type="range" min="0" max="100"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>4 Contact Information</legend>
+
+                <label>Email Address*</label>
+                <input type="email" id="email" required><br>
+
+                <label>Phone Number*</label>
+                <input type="tel" id="phone" required><br>
+
+                <label>Website URL</label>
+                <input type="url"><br>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="contactus.js"></script>
+</body>
+</html>

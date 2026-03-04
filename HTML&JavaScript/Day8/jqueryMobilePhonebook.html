@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        .avatar { width:60px; height:60px; border-radius:50%; background:#667eea; color:#fff; 
+                  display:inline-flex; align-items:center; justify-content:center; font-size:20px; 
+                  margin-right:10px; float:left; }
+        .contact-item { padding:10px; border-bottom:1px solid #ddd; cursor:pointer; }
+        input.error { border: 2px solid #d32f2f !important;background-color: #ffe6e6;}
+        
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="list">
+    <div data-role="header"><h1>Contact List</h1><a href="#add" data-icon="plus" class="ui-btn-right">Add</a></div>
+    <div data-role="content">
+        <input type="text" id="search" placeholder="Filter Name..." data-mini="true">
+        <div id="contacts"></div>
+    </div>
+</div>
+
+<div data-role="page" id="detail">
+    <div data-role="header"><a href="#list" data-icon="back">Back</a><h1 id="dName"></h1></div>
+    <div data-role="content">
+        <div class="avatar" id="dAvatar" style="width:100px;height:100px;font-size:40px;margin:20px auto;float:none;"></div>
+        <h2 id="dFullName" style="text-align:center;"></h2>
+        <ul data-role="listview" data-inset="true">
+            <li><strong>Phone:</strong> <span id="dPhone"></span></li>
+            <li><strong>Email:</strong> <span id="dEmail"></span></li>
+            <li><strong>Gender:</strong> <span id="dGender"></span></li>
+        </ul>
+        <a href="#" id="call" data-role="button" data-icon="phone">Call</a>
+        <a href="#edit" id="editBtn" data-role="button" data-icon="edit">Edit</a>
+        <a href="#delete" id="delBtn" data-role="button" data-icon="delete">Delete</a>
+    </div>
+</div>
+
+<div data-role="page" id="add">
+    <div data-role="header"><a href="#list" data-icon="back">Back</a><h1>New Contact</h1></div>
+    <div data-role="content">
+        <form id="addForm">
+            <label>Name *</label><input type="text" id="aName" required>
+            <label>Phone *</label><input type="tel" id="aPhone" required>
+            <label>Email</label><input type="email" id="aEmail">
+            <label>Gender</label>
+            <select id="aGender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <button type="submit" data-icon="check">Save</button>
+            <a href="#list" data-role="button" data-icon="delete">Cancel</a>
+        </form>
+    </div>
+</div>
+
+<div data-role="page" id="edit">
+    <div data-role="header"><a href="#detail" data-icon="back">Back</a><h1>Edit Contact</h1></div>
+    <div data-role="content">
+        <form id="editForm">
+            <input type="hidden" id="eId">
+            <label>Name *</label><input type="text" id="eName" required>
+            <label>Phone *</label><input type="tel" id="ePhone" required>
+            <label>Email</label><input type="email" id="eEmail">
+            <label>Gender</label>
+            <select id="eGender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <button type="submit" data-icon="check">Save</button>
+            <a href="#detail" data-role="button" data-icon="delete">Cancel</a>
+        </form>
+    </div>
+</div>
+
+<div data-role="page" id="delete">
+    <div data-role="header"><h1>Delete Contact?</h1></div>
+    <div data-role="content">
+        <p style="text-align:center;">Are you sure?</p>
+        <a href="#detail" data-role="button">Cancel</a>
+        <a href="#" id="confirmDel" data-role="button" data-theme="b">Delete</a>
+    </div>
+</div>
+
+<script src="jqueryMobilePhonebook.js"></script>
+
+</body>
+</html>

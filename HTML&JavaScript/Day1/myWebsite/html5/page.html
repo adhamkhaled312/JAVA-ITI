@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+    <link id="theme" rel="stylesheet" href="light.css">
+</head>
+<body>
+
+<header>
+    <h1>Adham Khaled</h1>
+    <p>Email: <a href="mailto:adhamkhaled312@gmail.com">adhamkhaled312@gmail.com</a></p>
+</header>
+
+<nav>
+    <a href="#personal-data">Personal Data</a>
+    <a href="#interests">My Interests</a>
+    <a href="#future-plans">Future Plans</a>
+    <a href="#experience">Experience</a>
+    <a href="sitesdirectory.html">Sites Directory</a>
+    <a href="contactus.html">Contact Us</a>
+</nav>
+
+<main>
+
+    <section id="personal-photo">
+        <h2>My Photo</h2>
+        <figure>
+            <img src="myphoto.jpg" alt="Personal Photo of Adham" width="250">
+            <figcaption>This is me</figcaption>
+        </figure>
+    </section>
+
+    <section id="personal-data">
+        <h2>Personal Data</h2>
+        <p>
+            <b>Name:</b> Adham Khaled <br>
+            <i>Age:</i> 24 <br>
+            <u>Country:</u> Egypt
+        </p>
+    </section>
+
+    <section id="interests">
+        <h2>My Interests</h2>
+        <p>
+            I am interested in <strong>Java Development</strong>,
+            <em>Web Development</em>
+        </p>
+    </section>
+
+    <section id="future-plans">
+        <h2>Future Plans</h2>
+        <p>
+            I plan to become a <big>professional software engineer</big>
+            and work in international companies.
+        </p>
+    </section>
+
+    <section id="experience">
+        <h2>Computer Related Experience</h2>
+        <ul>
+            <li>C and C++ Programming</li>
+            <li>Java Development</li>
+            <li>Linux Systems</li>
+            <li>Embedded Systems</li>
+            <li>Web Development</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Adham Khaled | All Rights Reserved</p>
+    <button onclick="setStyle('light.css')">Light Mode</button>
+    <button onclick="setStyle('dark.css')">Dark Mode</button>
+</footer>
+
+<script>
+function setStyle(file) {
+    document.getElementById("theme").href = file;
+}
+</script>
+
+</body>
+</html>

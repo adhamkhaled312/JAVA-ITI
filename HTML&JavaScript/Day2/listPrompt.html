@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript">
+        var choice,startTag,endTag,title,valid=true;
+        choice = prompt("Select a list style:\n1(bullet), 2(numbered), 3(lettered)");
+        switch(choice){
+            case "1":
+                title = "<h1>Bullet List</h1>"
+                startTag = "<ul>";
+                endTag = "</ul>";
+                break;
+            case "2":
+                title = "<h1>Numbered List</h1>"
+                startTag = "<ol>";
+                endTag = "</ol>";
+                break;
+            case "3":
+                title = "<h1>Lettered List</h1>"
+                startTag = "<ol type=\"A\">";
+                endTag = "</ol>";
+                break;
+            default:
+                valid=false;
+        }
+        if(valid){
+            document.write(title+startTag);
+            for(let i=0;i<3;i++){
+                document.write("<li> List item " + i +"</li>");
+            }
+            document.write(endTag);
+        }
+        else{
+            document.write("Invalid Choice");
+        }
+    </script>
+    <body>
+        <p>Click refresh to run the script again</p>
+    </body>
+</head>
